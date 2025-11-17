@@ -212,6 +212,10 @@ export type ServerConfig = {
   rateLimitMax: number;
   /** Rate limiting time window in milliseconds */
   rateLimitWindow: number;
+  /** Allowed hosts for DNS rebinding protection */
+  allowedHosts: string[];
+  /** Whether to enable DNS rebinding protection */
+  enableDnsRebindingProtection: boolean;
 };
 
 /**
