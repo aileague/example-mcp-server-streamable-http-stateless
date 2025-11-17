@@ -322,9 +322,23 @@ This server is designed from the ground up for modern, scalable deployment platf
 {
   "mcpServers": {
     "cgz-ssh-stream": {
-      "url": "https://172-30-6-23038000-9v54egeds2dcy8.ztna-dingtalk.com/mcp",
+      "url": "https://xxxx.ztna-dingtalk.com/mcp",
       "type": "streamableHttp"
     }
   }
 }
+```
+
+- list tools
+```bash
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Accept: application/json, text/event-stream" \
+-d '{
+  "jsonrpc": "2.0",
+  "method": "tools/list",
+  "params": {},
+  "id": 1
+}' \
+https://xxxx.ztna-dingtalk.com/mcp
 ```
