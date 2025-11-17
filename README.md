@@ -316,3 +316,15 @@ This server is designed from the ground up for modern, scalable deployment platf
 
 - **Serverless:** The `handleMCPRequest` function can be exported directly as a serverless function handler for platforms like Vercel or AWS Lambda.
 - **Kubernetes:** The Docker image is ready to be deployed with a Horizontal Pod Autoscaler (HPA), allowing the cluster to automatically scale replicas up and down based on CPU or request load.
+
+### 阿里百炼Http MCP
+```json
+{
+  "mcpServers": {
+    "cgz-ssh-stream": {
+      "url": "https://172-30-6-23038000-9v54egeds2dcy8.ztna-dingtalk.com/mcp",
+      "type": "streamableHttp"
+    }
+  }
+}
+```
